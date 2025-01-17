@@ -1,11 +1,17 @@
 import React, { useEffect, useRef, useState } from "react"
-import { sectionData } from "../../utils/data"
 
 const Scrollspy = ({ sectionData }) => {
   const [activeSection, setActiveSection] = useState("") // Track active section
   const observerRefs = useRef([]) // To store refs for each section
 
   useEffect(() => {
+    if (typeof window === "undefined") return // Ensure this runs only in the browser
+
+    // Attach refs to section data
+    observerRefs.current = sectionData
+      .map((section) => document.getElementById(section.id))
+      .filter(Boolean) // Filter out null/undefined elements
+
     // Create an Intersection Observer
     const observer = new IntersectionObserver(
       (entries) => {
@@ -27,18 +33,10 @@ const Scrollspy = ({ sectionData }) => {
     return () => {
       observer.disconnect()
     }
-  }, [])
-
-  // Attach refs to section data
-  useEffect(() => {
-    observerRefs.current = sectionData.map((section) =>
-      document.getElementById(section.id)
-    )
-  }, [])
+  }, [sectionData])
 
   return (
     <div className="flex flex-col gap-4 w-55 fixed right-0 top-1/2 transform -translate-y-1/2 pe-10 opacity-50">
-      {/* <h2 className="text-white text-2xl font-semibold">On this page</h2> */}
       <ul className="text-white space-y-2 w-full">
         {sectionData.map((item) => (
           <li
