@@ -10,6 +10,15 @@ import Footer from "../Footer/Footer"
 import ContactUs from "../ContactUs/ContactUs"
 
 const Home = () => {
+  const sectionData = [
+    { id: "introduction", title: "Introduction" },
+    { id: "aboutMe", title: "About Me" },
+    { id: "professionalExperties", title: "Professional Expertise" },
+    { id: "facts", title: "Facts" },
+    { id: "portfolio", title: "Portfolio" },
+    { id: "contactUs", title: "Contact Us" },
+  ]
+
   return (
     <>
       <Header />
@@ -37,7 +46,7 @@ const Home = () => {
             </section>
           </div>
           {/* scrollspy section */}
-          <Scrollspy />
+          <Scrollspy sectionData={sectionData} />
         </div>
       </div>
       <Footer />

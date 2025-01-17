@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react"
 import { sectionData } from "../../utils/data"
 
-const Scrollspy = () => {
+const Scrollspy = ({ sectionData }) => {
   const [activeSection, setActiveSection] = useState("") // Track active section
   const observerRefs = useRef([]) // To store refs for each section
 
