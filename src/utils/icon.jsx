@@ -1,0 +1,19 @@
+import { FcDeleteDatabase } from "react-icons/fc"
+import { CiLocationOn } from "react-icons/ci"
+import { FaTrash } from "react-icons/fa"
+import { CiEdit } from "react-icons/ci"
+import { FaFacebookF } from "react-icons/fa"
+import { FaLinkedinIn } from "react-icons/fa"
+import { FaInstagram } from "react-icons/fa"
+import { FaWhatsapp } from "react-icons/fa"
+import { IoIosArrowForward } from "react-icons/io"
+
+export const location = <CiLocationOn />
+export const trash = <FaTrash />
+export const edit = <CiEdit />
+export const deleteIcon = <FcDeleteDatabase />
+export const facebook = <FaFacebookF />
+export const linkedIn = <FaLinkedinIn />
+export const instagram = <FaInstagram />
+export const whatsapp = <FaWhatsapp />
+export const arrow = <IoIosArrowForward />
