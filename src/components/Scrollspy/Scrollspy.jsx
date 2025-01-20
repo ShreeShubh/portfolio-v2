@@ -36,8 +36,8 @@ const Scrollspy = ({ sectionData }) => {
   }, [sectionData])
 
   return (
-    <div className="hidden lg:flex flex-col gap-4 w-55 fixed right-0 top-1/2 transform -translate-y-1/2 pe-10 opacity-50">
-      <ul className="text-white space-y-2 w-full">
+    <div className="hidden lg:flex flex-col gap-4 w-55 fixed right-0 top-1/2 transform -translate-y-1/2 pe-10">
+      <ul className="text-white/50 space-y-2 w-full">
         {sectionData.map((item) => (
           <li
             key={item.id}
