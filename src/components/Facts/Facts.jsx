@@ -3,7 +3,7 @@ import Clients from "./Clients"
 
 const Facts = () => {
   return (
-    <div className="min-h-screen px-4 md:px-10 py-10 ">
+    <div className="min-h-screen px-4 md:px-10 py-10">
       <div className="space-y-10 max-w-screen-xl mx-auto">
         {/* Heading */}
         <div className="text-center md:text-left">

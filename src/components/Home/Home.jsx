@@ -23,7 +23,7 @@ const Home = () => {
     <>
       <Header />
       <div className="background py-3">
-        <div className="flex justify-between max-w-screen-2xl px-10 mx-auto gap-5">
+        <div className="flex justify-between max-w-screen-2xl lg:px-10 mx-auto gap-5">
           {/* main container */}
           <div className="w-full">
             <section id="introduction">
