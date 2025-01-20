@@ -6,7 +6,6 @@ export const CustomButton = styled(Button)(({ theme }) => ({
   color: "#001B39", // Text color
   padding: "8px 20px",
   borderRadius: "8px",
-  marginTop: "10px",
   transition: "transform 0.2s ease-in-out, background-color 0.2s ease-in-out",
   "&:hover": {
     backgroundColor: "#02E089", // Hover color

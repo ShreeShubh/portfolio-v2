@@ -15,15 +15,9 @@ const Header = () => {
 
         {/* Social Media */}
         <div className="space-x-2">
-          <CustomButton className="p-2 rounded-md md:rounded-full">
-            {facebook}
-          </CustomButton>
-          <CustomButton className="p-2 rounded-md md:rounded-full">
-            {linkedIn}
-          </CustomButton>
-          <CustomButton className="p-2 rounded-md md:rounded-full">
-            {instagram}
-          </CustomButton>
+          <CustomButton className="">{facebook}</CustomButton>
+          <CustomButton className="">{linkedIn}</CustomButton>
+          <CustomButton className="">{instagram}</CustomButton>
           {/* Uncomment for WhatsApp */}
           {/* <CustomButton className="p-2 rounded-md md:rounded-full">
         {whatsapp}

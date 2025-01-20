@@ -21,7 +21,7 @@ const Introduction = () => {
             </h1>
           </div>
 
-          <div className="w-full md:w-[572px] space-y-3 mt-5">
+          <div className="w-full md:w-[572px] space-y-4 mt-5">
             <h2 className="text-xl md:text-2xl font-semibold text-white text-center md:text-left">
               Building Seamless Digital Solutions with{" "}
               <br className="hidden md:block" />

@@ -117,7 +117,9 @@ const Form = () => {
       {renderNameField()}
       {renderEmailField()}
       {renderPhoneAndCompanyField()}
-      <CustomButton type="submit">Submit</CustomButton>
+      <div className="mt-3">
+        <CustomButton type="submit">Submit</CustomButton>
+      </div>
     </form>
   )
 }
