@@ -3,27 +3,31 @@ import { CustomButton } from "../MaterialComponents/CustomButton/CustomButton"
 
 const AboutMe = () => {
   return (
-    <div className="h-screen">
-      <div className="flex items-center gap-10">
-        <img
-          src="/image02.png"
-          width={500}
-          alt="developer"
-          className="mix-blend-luminosity"
-        />
-        <div className="w-[600px] space-y-5">
-          {/* heading */}
-          <div>
-            <h2 className="text-secondary-text text-7xl font-extrabold">
+    <div className="min-h-screen px-4 md:px-10 py-10 max-w-screen-xl">
+      <div className="flex flex-wrap items-center gap-10 lg:gap-20">
+        {/* Image Section */}
+        <div className="w-full lg:w-auto flex-shrink-0 order-1 lg:order-none">
+          <img
+            src="/image02.png"
+            alt="developer"
+            className="mix-blend-luminosity w-full max-w-[450px] h-auto mx-auto"
+          />
+        </div>
+
+        {/* Content Section */}
+        <div className="w-full lg:w-[600px] space-y-5">
+          {/* Heading */}
+          <div className="text-center lg:text-left">
+            <h2 className="text-secondary-text text-5xl md:text-7xl font-extrabold">
               About Me
             </h2>
-            <h3 className="text-white font-extrabold text-3xl">
+            <h3 className="text-white font-extrabold text-2xl md:text-3xl">
               About <span className="text-primary-text">Me</span>
             </h3>
           </div>
 
-          {/* description */}
-          <div className="space-y-3 text-white text-lg mt-7 text-justify">
+          {/* Description */}
+          <div className="space-y-4 text-white text-sm md:text-lg mt-5 text-justify">
             <p>
               Hello! I’m Shubham Shree, a passionate web developer with a flair
               for crafting innovative digital solutions using the MERN Stack. My
@@ -43,17 +47,12 @@ const AboutMe = () => {
               learn, grow, and collaborate. Whether it’s solving a tricky
               problem or bringing bold visions to life, I’m here to create
               digital experiences that leave a lasting impact. Let’s transform
-              ideas into reality together!"
+              ideas into reality together!
             </p>
           </div>
 
-          {/* button */}
-          {/* <div>
-            <button className="bg-primary-text hover:bg-[#02E089] text-primary-bg px-5 py-2 rounded transform transition duration-200 ease-in-out hover:scale-95 active:scale-90">
-              VIEW MORE
-            </button>
-          </div> */}
-          <div>
+          {/* Button */}
+          <div className="flex justify-center lg:justify-start">
             <CustomButton>Let's work together</CustomButton>
           </div>
         </div>

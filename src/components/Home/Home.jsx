@@ -13,7 +13,7 @@ const Home = () => {
   const sectionData = [
     { id: "introduction", title: "Introduction" },
     { id: "aboutMe", title: "About Me" },
-    { id: "professionalExperties", title: "Professional Expertise" },
+    { id: "professionalExperties", title: "Services" },
     { id: "facts", title: "Facts" },
     { id: "portfolio", title: "Portfolio" },
     { id: "contactUs", title: "Contact Us" },
@@ -25,7 +25,7 @@ const Home = () => {
       <div className="background py-3">
         <div className="flex justify-between max-w-screen-2xl px-10 mx-auto gap-5">
           {/* main container */}
-          <div className="">
+          <div className="w-full">
             <section id="introduction">
               <Introduction />
             </section>
@@ -45,6 +45,7 @@ const Home = () => {
               <ContactUs />
             </section>
           </div>
+
           {/* scrollspy section */}
           <Scrollspy sectionData={sectionData} />
         </div>

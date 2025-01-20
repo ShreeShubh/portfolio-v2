@@ -92,32 +92,32 @@ export const clientsData = [
   },
 ]
 
-export const sectionData = [
-  {
-    id: "introduction",
-    title: "Introduction",
-  },
-  {
-    id: "aboutMe",
-    title: "About Me",
-  },
-  {
-    id: "professionalExperties",
-    title: "Services",
-  },
-  {
-    id: "facts",
-    title: "Facts",
-  },
-  {
-    id: "portfolio",
-    title: "Portfolio",
-  },
-  {
-    id: "contactUs",
-    title: "Contact Us",
-  },
-]
+// export const sectionData = [
+//   {
+//     id: "introduction",
+//     title: "Introduction",
+//   },
+//   {
+//     id: "aboutMe",
+//     title: "About Me",
+//   },
+//   {
+//     id: "professionalExperties",
+//     title: "Services",
+//   },
+//   {
+//     id: "facts",
+//     title: "Facts",
+//   },
+//   {
+//     id: "portfolio",
+//     title: "Portfolio",
+//   },
+//   {
+//     id: "contactUs",
+//     title: "Contact Us",
+//   },
+// ]
 
 export const tabs = [
   {

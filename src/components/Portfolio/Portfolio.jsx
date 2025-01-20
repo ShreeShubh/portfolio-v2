@@ -18,61 +18,59 @@ const Portfolio = () => {
   }
 
   return (
-    <div className="min-h-screen">
-      <div className="flex flex-col gap-10 items-center py-32">
-        {/* heading */}
-        <div>
-          <h2 className="text-secondary-text text-7xl font-extrabold text-center">
+    <div className="min-h-screen px-4 md:px-10 py-10 max-w-screen-lg">
+      <div className="flex flex-col gap-10 items-center py-16">
+        {/* Heading */}
+        <div className="text-center">
+          <h2 className="text-secondary-text text-5xl md:text-7xl font-extrabold">
             Portfolio
           </h2>
-          <h3 className="text-white font-extrabold text-3xl text-center">
+          <h3 className="text-white font-extrabold text-2xl md:text-3xl">
             Some of my <span className="text-primary-text">Recent Work</span>
           </h3>
         </div>
 
-        {/* tabs */}
-        <ul className="bg-secondary-bg px-7 py-3 rounded-lg flex items-center gap-8 shadow-lg">
-          {tabs.map((item) => {
-            return (
-              <li key={item.id}>
-                <button
-                  className={`text-lg font-semibold ${
-                    activeTab === item.id
-                      ? "text-primary-text underline underline-offset-8"
-                      : "text-white"
-                  }`}
-                  onClick={() => handleActiveTab(item.id)}
-                >
-                  {item.tab}
-                </button>
-              </li>
-            )
-          })}
+        {/* Tabs */}
+        <ul className="bg-secondary-bg px-4 md:px-7 py-3 rounded-lg flex items-center gap-4 md:gap-8 shadow-lg">
+          {tabs.map((item) => (
+            <li key={item.id}>
+              <button
+                className={`text-base md:text-lg font-semibold ${
+                  activeTab === item.id
+                    ? "text-primary-text underline underline-offset-8"
+                    : "text-white"
+                }`}
+                onClick={() => handleActiveTab(item.id)}
+              >
+                {item.tab}
+              </button>
+            </li>
+          ))}
         </ul>
 
-        {/* projects */}
-        <div className="flex justify-center">
-          <ul className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3 mt-4">
-            {getFilteredProject().map((item, index) => {
-              return (
-                <li
-                  key={index}
-                  className="bg-secondary-bg rounded-xl w-[336px] h-[351px] flex flex-col shadow-lg"
-                >
-                  <img
-                    src={item.image}
-                    alt={`project ${index + 1}`}
-                    className="w-full rounded-t-xl"
-                  />
-                  <div className="p-5 space-y-3">
-                    <h2 className="text-lg text-white font-semibold">
-                      {item.title}
-                    </h2>
-                    <p className="text-base text-white">{item.desc}</p>
-                  </div>
-                </li>
-              )
-            })}
+        {/* Projects */}
+        <div className="flex justify-center w-full">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+            {getFilteredProject().map((item, index) => (
+              <li
+                key={index}
+                className="bg-secondary-bg rounded-xl flex flex-col shadow-lg w-full max-w-[336px] mx-auto"
+              >
+                {/* Project Image */}
+                <img
+                  src={item.image}
+                  alt={`project ${index + 1}`}
+                  className="w-full rounded-t-xl object-cover h-[200px]"
+                />
+                {/* Project Details */}
+                <div className="p-5 space-y-3">
+                  <h2 className="text-lg text-white font-semibold">
+                    {item.title}
+                  </h2>
+                  <p className="text-sm md:text-base text-white">{item.desc}</p>
+                </div>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
