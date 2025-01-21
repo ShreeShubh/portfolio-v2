@@ -22,9 +22,14 @@ export default {
           "75%": { transform: "rotate(5deg)" },
           "100%": { transform: "rotate(0deg)" },
         },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
       },
       animation: {
         seesaw: "seesaw 2s ease-in-out infinite",
+        "fade-in": "fadeIn 1s ease-in-out forwards",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
