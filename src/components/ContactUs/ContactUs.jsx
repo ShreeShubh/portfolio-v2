@@ -3,7 +3,7 @@ import Form from "./Form/Form"
 
 const ContactUs = () => {
   return (
-    <div className="h-auto pb-14 max-w-screen-lg px-4 md:px-10">
+    <div className="h-auto pb-14 max-w-screen-lg px-4 md:px-10 py-7">
       <div className="space-y-10">
         {/* Heading */}
         <div className="">

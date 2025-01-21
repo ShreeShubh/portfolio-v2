@@ -6,7 +6,7 @@ const AboutMe = () => {
     <div className="min-h-screen px-4 md:px-10 py-10 max-w-screen-xl">
       <div className="flex flex-wrap items-center gap-10 lg:gap-20">
         {/* Image Section */}
-        <div className="w-full lg:w-auto flex-shrink-0 order-1 lg:order-none">
+        <div className="w-full lg:w-auto flex-shrink-0">
           <img
             src="/image02.png"
             alt="developer"
@@ -17,7 +17,7 @@ const AboutMe = () => {
         {/* Content Section */}
         <div className="w-full lg:w-[600px] space-y-5">
           {/* Heading */}
-          <div className="text-center lg:text-left">
+          <div className="">
             <h2 className="text-secondary-text text-5xl md:text-7xl font-extrabold">
               About Me
             </h2>

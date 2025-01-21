@@ -18,8 +18,8 @@ const Portfolio = () => {
   }
 
   return (
-    <div className="min-h-screen px-4 md:px-10 py-10 max-w-screen-lg">
-      <div className="flex flex-col gap-10 items-center py-16">
+    <div className="min-h-screen px-4 md:px-10 max-w-screen-lg">
+      <div className="flex flex-col gap-10 items-center py-7">
         {/* Heading */}
         <div className="text-center">
           <h2 className="text-secondary-text text-5xl md:text-7xl font-extrabold">

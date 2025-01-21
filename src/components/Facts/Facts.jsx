@@ -6,7 +6,7 @@ const Facts = () => {
     <div className="min-h-screen px-4 md:px-10 py-10">
       <div className="space-y-10 max-w-screen-xl mx-auto">
         {/* Heading */}
-        <div className="text-center md:text-left">
+        <div className="">
           <h2 className="text-secondary-text text-5xl md:text-7xl font-extrabold">
             Facts
           </h2>
@@ -16,7 +16,7 @@ const Facts = () => {
         </div>
 
         {/* Journey Section */}
-        <div className="bg-[#0B223E] p-8 md:p-10 lg:p-12 flex flex-col gap-20 shadow-lg rounded-lg max-w-screen-lg">
+        <div className="bg-[#0B223E] p-8 md:p-10 lg:p-12 flex flex-col gap-5 shadow-lg rounded-lg max-w-screen-lg">
           <Timeline />
           <Clients />
         </div>

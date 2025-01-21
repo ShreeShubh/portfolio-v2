@@ -2,59 +2,6 @@ import { journeyData } from "../../utils/data"
 
 const Timeline = () => {
   return (
-    // <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 mt-16">
-    //   {journeyData.map((item, index) => (
-    //     <li key={index} className="flex flex-col items-center gap-4 relative">
-    //       {/* Designation & Duration */}
-    //       <div
-    //         className={`text-center absolute ${
-    //           index % 2 === 0 ? "-top-24" : "-bottom-24"
-    //         }`}
-    //       >
-    //         <h3 className="text-primary-text text-lg font-semibold">
-    //           {item.designation}
-    //         </h3>
-    //         <p className="text-white text-sm md:text-lg">{item.duration}</p>
-    //       </div>
-
-    //       {/* White Arrow */}
-    //       <div
-    //         className={`absolute bottom-20 ${
-    //           index % 2 !== 0 ? "" : "hidden"
-    //         } group`}
-    //       >
-    //         <img
-    //           src="/white-arrow.svg"
-    //           width={238}
-    //           height={95}
-    //           alt="white arrow"
-    //           className=""
-    //         />
-    //       </div>
-
-    //       {/* Green Arrow */}
-    //       <div
-    //         className={`absolute top-20 right-16 ${
-    //           index % 2 === 0 && index !== 0 ? "" : "hidden"
-    //         } group`}
-    //       >
-    //         <img
-    //           src="/green-arrow.svg"
-    //           width={238}
-    //           height={95}
-    //           alt="green arrow"
-    //           className=""
-    //         />
-    //       </div>
-
-    //       {/* Company */}
-    //       <div className="w-40 md:w-44 py-5 bg-white flex justify-center items-center text-primary-bg rounded-lg font-semibold">
-    //         {item.company}
-    //       </div>
-    //     </li>
-    //   ))}
-    // </ul>
-
     <ol class="relative border-s border-gray-200">
       <li class="mb-10 ms-6">
         <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white ">
