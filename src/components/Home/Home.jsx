@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Header from "../Header/Header"
 import Introduction from "../Introduction/Introduction"
 import AboutMe from "../AboutMe/AboutMe"
@@ -8,6 +8,7 @@ import Portfolio from "../Portfolio/Portfolio"
 import Scrollspy from "../Scrollspy/Scrollspy"
 import Footer from "../Footer/Footer"
 import ContactUs from "../ContactUs/ContactUs"
+import AOS from "aos"
 
 const Home = () => {
   const sectionData = [
@@ -18,6 +19,14 @@ const Home = () => {
     { id: "portfolio", title: "Portfolio" },
     { id: "contactUs", title: "Contact Us" },
   ]
+
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 1200,
+      easing: "ease-in-sine",
+    })
+  })
 
   return (
     <>

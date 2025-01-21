@@ -1,4 +1,3 @@
-import React from "react"
 import { CustomButton } from "../MaterialComponents/CustomButton/CustomButton"
 
 const Introduction = () => {
@@ -33,7 +32,7 @@ const Introduction = () => {
 
           {/* Mobile Image Section */}
 
-          <div className="mt-7 lg:mt-0 block md:hidden">
+          <div className="mt-7 lg:mt-0 block md:hidden" data-aos="fade-down">
             <img src="/image01.png" className="w-50h-auto" alt="developer" />
           </div>
 
@@ -58,10 +57,13 @@ const Introduction = () => {
         </div>
 
         {/* Image Section */}
-        <div className="mt-7 lg:mt-0 hidden md:block">
+        <div
+          className="mt-7 mr-32 lg:mt-0 hidden md:block"
+          data-aos="flip-right"
+        >
           <img
             src="/image01.png"
-            className="w-50 lg:w-[500px] h-auto"
+            className="w-50 lg:w-[400px] h-auto"
             alt="developer"
           />
         </div>

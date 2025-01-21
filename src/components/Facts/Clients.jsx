@@ -8,7 +8,10 @@ const Clients = () => {
       </h3>
       <ul className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-5">
         {clientsData.map((item, index) => (
-          <li key={index} className="flex justify-center items-center">
+          <li
+            key={index}
+            className="flex justify-center items-center ease-in-out duration-300 lg:hover:scale-125"
+          >
             <img
               src={item.iconUrl}
               width={120}

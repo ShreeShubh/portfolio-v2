@@ -2,26 +2,29 @@ export const servicesData = [
   {
     lightIconUrl: "/icons/light-icon01.svg",
     darkIconUrl: "/icons/dark-icon01.svg",
-    title: "UI & UX Design",
+    title: "Web Design & Development",
     shortDesc:
-      "Hi! My name is Sanjiban. I’m a passionate digital designer focussing on UI UX, graphic design.",
-    longDesc: "",
+      "To create modern, responsive, and user-friendly websites that deliver exceptional user experiences and align with your business goals.",
+    longDesc:
+      "I offer Web Design & Development services to bring your ideas to life through visually stunning and highly functional websites. From designing intuitive layouts and crafting engaging user interfaces to developing responsive and scalable web applications, I ensure that every website I create meets modern standards and exceeds client expectations. Whether you need a sleek portfolio, a business website, or a robust e-commerce platform, my expertise ensures a seamless experience across devices, delivering a digital presence that truly represents your brand. Let me help you create a website that not only looks great but performs flawlessly!",
   },
   {
     lightIconUrl: "/icons/light-icon02.svg",
     darkIconUrl: "/icons/dark-icon02.svg",
-    title: "Graphic Design",
+    title: "UI & UX Design",
     shortDesc:
-      "Hi! My name is Sanjiban. I’m a passionate digital designer focussing on UI UX, graphic design.",
-    longDesc: "",
+      "To create intuitive, visually appealing, and user-centered digital experiences that drive engagement.",
+    longDesc:
+      "I offer UI & UX Design services to craft seamless and user-focused digital experiences. From wireframing and prototyping to designing visually compelling interfaces, I prioritize user needs at every stage of the process. My goal is to enhance usability, improve accessibility, and ensure your digital products are both functional and aesthetically pleasing. By combining creativity with research-driven strategies, I deliver designs that captivate users while meeting business objectives. Let’s work together to create designs that not only look great but also feel intuitive and engaging.",
   },
   {
     lightIconUrl: "/icons/light-icon03.svg",
     darkIconUrl: "/icons/dark-icon03.svg",
-    title: "Print media Design",
+    title: "Content Development",
     shortDesc:
-      "Hi! My name is Sanjiban. I’m a passionate digital designer focussing on UI UX, graphic design.",
-    longDesc: "",
+      "To create engaging, high-quality, and audience-focused content tailored to your brand's voice and objectives.",
+    longDesc:
+      "I offer Content Development services to help businesses convey their message effectively and captivate their audience. From crafting compelling website copy, blog articles, and product descriptions to creating scripts, social media posts, and multimedia content, I ensure that every piece aligns with your brand's tone and strategy. With a focus on storytelling and SEO optimization, my content not only engages but also drives traffic and conversions. Let’s collaborate to build meaningful content that resonates with your audience and supports your business goals.",
   },
 ]
 

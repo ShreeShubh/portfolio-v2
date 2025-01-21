@@ -14,7 +14,7 @@ const Header = () => {
         </div>
 
         {/* Social Media */}
-        <div className="space-x-2">
+        <div className="space-x-2" data-aos="flip-down">
           <CustomButton className="">{facebook}</CustomButton>
           <CustomButton className="">{linkedIn}</CustomButton>
           <CustomButton className="">{instagram}</CustomButton>
