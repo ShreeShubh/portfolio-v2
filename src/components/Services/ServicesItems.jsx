@@ -106,15 +106,14 @@ const ServicesItems = () => {
 
                 {/* Modal Footer */}
                 <div className="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
-                  <button
+                  <CustomButton
                     onClick={() => {
                       closeModal()
                       // Add any additional functionality for "GET IN TOUCH" button
                     }}
-                    className="px-4 py-2 bg-primary-text text-primary-bg font-semibold rounded-lg hover:bg-primary-bg hover:text-primary-text"
                   >
                     GET IN TOUCH
-                  </button>
+                  </CustomButton>
                 </div>
               </div>
             </div>
