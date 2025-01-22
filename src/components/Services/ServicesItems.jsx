@@ -69,14 +69,14 @@ const ServicesItems = () => {
             <div className="fixed inset-0 z-50 flex justify-center items-center bg-black bg-opacity-50 px-3">
               <div className="relative p-4 w-full max-w-2xl max-h-full bg-primary-bg rounded-lg shadow-xl border-2">
                 {/* Modal Header */}
-                <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-                  <h3 className="text-xl font-semibold text-primary-text dark:text-white">
+                <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+                  <h3 className="text-xl font-semibold text-primary-text">
                     {item.title}
                   </h3>
                   <button
                     type="button"
                     onClick={closeModal}
-                    className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                    className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 flex justify-center items-center"
                   >
                     <svg
                       className="w-3 h-3"
@@ -98,14 +98,14 @@ const ServicesItems = () => {
                 </div>
 
                 {/* Modal Body */}
-                <div className="p-4 md:p-5 space-y-4">
-                  <p className="text-base leading-relaxed text-white dark:text-gray-400">
+                <div className="p-4 md:p-5 space-y-4 max-h-60 overflow-auto">
+                  <p className="text-base leading-relaxed text-white overflow-auto">
                     {item.longDesc}
                   </p>
                 </div>
 
                 {/* Modal Footer */}
-                <div className="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                <div className="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b">
                   <CustomButton
                     onClick={() => {
                       closeModal()
