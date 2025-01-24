@@ -22,18 +22,18 @@ const Home = () => {
     { id: "contactUs", title: "Contact Us" },
   ]
 
-  useEffect(() => {
-    AOS.init({
-      offset: 200,
-      duration: 1200,
-      easing: "ease-in-sine",
-    })
-  })
+  // useEffect(() => {
+  //   AOS.init({
+  //     offset: 200,
+  //     duration: 1200,
+  //     easing: "ease-in-sine",
+  //   })
+  // })
 
   return (
     <>
       <Header />
-      <div className="background py-3 w-full">
+      <div className="background py-3">
         <div className="flex justify-between max-w-screen-2xl lg:px-10 mx-auto gap-5">
           {/* main container */}
           <div className="w-full">
