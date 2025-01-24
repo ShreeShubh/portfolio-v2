@@ -9,12 +9,14 @@ import Scrollspy from "../Scrollspy/Scrollspy"
 import Footer from "../Footer/Footer"
 import ContactUs from "../ContactUs/ContactUs"
 import AOS from "aos"
+import Technology from "../Technology/Technology"
 
 const Home = () => {
   const sectionData = [
     { id: "introduction", title: "Introduction" },
     { id: "aboutMe", title: "About Me" },
     { id: "professionalExperties", title: "Services" },
+    { id: "technology", title: "Technology" },
     { id: "facts", title: "Facts" },
     { id: "portfolio", title: "Portfolio" },
     { id: "contactUs", title: "Contact Us" },
@@ -43,6 +45,9 @@ const Home = () => {
             </section>
             <section id="professionalExperties">
               <Services />
+            </section>
+            <section id="technology">
+              <Technology />
             </section>
             <section id="facts">
               <Facts />

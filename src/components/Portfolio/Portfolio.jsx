@@ -12,16 +12,14 @@ const Portfolio = () => {
 
   const getFilteredProject = () => {
     if (activeTab !== "All") {
-      const filteredProject = projects.filter(
-        (item) => item.title === activeTab
-      )
+      const filteredProject = projects.filter((item) => item.id === activeTab)
       return filteredProject
     } else return projects
   }
 
   return (
     <div className="min-h-screen px-4 md:px-10 max-w-screen-lg">
-      <div className="flex flex-col gap-10 items-center py-7">
+      <div className="flex flex-col gap-7 items-center py-7">
         {/* Heading */}
         <div className="text-center">
           <h2 className="text-secondary-text text-5xl md:text-7xl font-extrabold">

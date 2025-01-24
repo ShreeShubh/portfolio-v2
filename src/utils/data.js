@@ -95,6 +95,84 @@ export const clientsData = [
   },
 ]
 
+export const technologyData = [
+  {
+    name: "MongoDB",
+    desc: "MongoDB is a NoSQL database that stores data in flexible, JSON-like documents.",
+    iconUrl: "/tech-icons/mongodb.png",
+  },
+  {
+    name: "Express.js",
+    desc: "It is a lightweight, fast, and flexible Node.js web application framework.",
+    iconUrl: "/tech-icons/expressjs.png",
+  },
+  {
+    name: "React.js",
+    desc: "It is a JavaScript library for building fast and interactive user interfaces.",
+    iconUrl: "/tech-icons/react.png",
+  },
+  {
+    name: "Next.js",
+    desc: "It is a React framework for building fast, server-rendered web applications with ease.",
+    iconUrl: "/tech-icons/nextjs.svg",
+  },
+  {
+    name: "Node.js",
+    desc: "It is a runtime that lets you run JavaScript on the server to build scalable applications.",
+    iconUrl: "/tech-icons/node.png",
+  },
+  {
+    name: "Django",
+    desc: "It is a high-level Python web framework for building secure, scalable, and fast web applications.",
+    iconUrl: "/tech-icons/django.png",
+  },
+  {
+    name: "JavaScript",
+    desc: "It is a versatile, high-level programming language that powers dynamic and interactive content on the web.",
+    iconUrl: "/tech-icons/js.png",
+  },
+  {
+    name: "Python",
+    desc: "It is a versatile and easy-to-use language, ideal for web development, data analysis, AI, and automation.",
+    iconUrl: "/tech-icons/python.png",
+  },
+  {
+    name: "HTML",
+    desc: "It is the building block of every website, used to structure content like text, images, and links you see on a page.",
+    iconUrl: "/tech-icons/html.png",
+  },
+  {
+    name: "CSS",
+    desc: "It is what makes websites look good by adding colors, fonts, layouts, and styles to the structure created with HTML.",
+    iconUrl: "/tech-icons/css.png",
+  },
+  {
+    name: "Tailwind CSS",
+    desc: "It is a modern tool that helps create stylish and responsive designs quickly by using pre-made building blocks directly in your code.",
+    iconUrl: "/tech-icons/tailwind.png",
+  },
+  {
+    name: "Bootstrap",
+    desc: "It is a popular framework that makes building responsive and visually appealing websites faster and easier with ready-to-use design components.",
+    iconUrl: "/tech-icons/bootstrap.png",
+  },
+  {
+    name: "SQL",
+    desc: "It is a language used to manage and organize data in databases, making it easy to store, retrieve, and analyze information.",
+    iconUrl: "/tech-icons/sql.png",
+  },
+  {
+    name: "WordPress",
+    desc: "It is a user-friendly platform for creating and managing websites, offering customizable themes and plugins to build everything from blogs to business sites.",
+    iconUrl: "/tech-icons/wordpress.png",
+  },
+  {
+    name: "AWS (Amazon Web Services)",
+    desc: "It is a cloud platform that provides tools and services to host websites, store data, and run applications securely and efficiently.",
+    iconUrl: "/tech-icons/aws.png",
+  },
+]
+
 // export const sectionData = [
 //   {
 //     id: "introduction",
@@ -128,60 +206,94 @@ export const tabs = [
     tab: "All",
   },
   {
-    id: "UI & UX Design",
-    tab: "UI & UX Design",
+    id: "Delivered Projects",
+    tab: "Delivered",
   },
   {
-    id: "Print Media",
-    tab: "Print Media",
+    id: "Currently Crafting",
+    tab: "Ongoing",
   },
   {
-    id: "Social Media",
-    tab: "Social Media",
+    id: "Development Journey",
+    tab: "Journey",
   },
 ]
 
 export const projects = [
   {
-    title: "UI & UX Design",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    projectLink: "",
+    id: "Delivered Projects",
+    title: "Catalyst Management Services: CMS",
+    desc: "This website offers innovative solutions to tackle complex challenges, promoting social equity for vulnerable groups through collaborative partnerships.",
+    projectLink: "https://cms.org.in/",
     githubLink: "",
-    image: "/project.jpg",
+    image: "/projects/cms.png",
   },
   {
-    title: "UI & UX Design",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    projectLink: "",
+    id: "Delivered Projects",
+    title: "Catalysts For Climate",
+    desc: "This website is a global initiative providing community-driven solutions to address climate change and build environmental resilience.",
+    projectLink: "https://catalyst4climate.net/",
     githubLink: "",
-    image: "/project.jpg",
+    image:
+      "https://elasticbeanstalk-ap-south-1-058264440923.s3.ap-south-1.amazonaws.com/Portfolio/catalyst4climate.png",
   },
   {
-    title: "Print Media",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    projectLink: "",
+    id: "Delivered Projects",
+    title: "Community Engagement: Fuzhio",
+    desc: "This website empowers communities by transforming their voices into insights that help organizations make informed decisions, drive success, and foster change.",
+    projectLink: "https://catalyst4climate.net/",
     githubLink: "",
-    image: "/project.jpg",
+    image:
+      "https://elasticbeanstalk-ap-south-1-058264440923.s3.ap-south-1.amazonaws.com/Portfolio/ce.png",
   },
   {
-    title: "Print Media",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    projectLink: "",
+    id: "Delivered Projects",
+    title: "EO Bangalore",
+    desc: "This is a dynamic hub for entrepreneurs, providing a vibrant community, exclusive resources, and growth opportunities to help businesses thrive.",
+    projectLink: "https://www.eobangalore.com/",
     githubLink: "",
-    image: "/project.jpg",
+    image: "/projects/eobangalore.png",
   },
   {
-    title: "Social Media",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    projectLink: "",
+    id: "Delivered Projects",
+    title: "Shoonya",
+    desc: "This initiative focuses on native tree planting and reforestation in vulnerable eco-zones for lasting environmental impact.",
+    projectLink: "https://cms.org.in/shoonya-roots-of-change",
     githubLink: "",
-    image: "/project.jpg",
+    image:
+      "https://elasticbeanstalk-ap-south-1-058264440923.s3.ap-south-1.amazonaws.com/Portfolio/shoonya-tree.png",
   },
   {
-    title: "Social Media",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    projectLink: "",
+    id: "Currently Crafting",
+    title: "Impact Catalyst Foundation",
+    desc: "This drives meaningful change through innovation and purpose, fueled by collaborations.",
+    projectLink: "https://icfoundation.catalysts.global/",
     githubLink: "",
-    image: "/project.jpg",
+    image: "/projects/icf.webp",
+  },
+  {
+    id: "Currently Crafting",
+    title: "Chartered Housing",
+    desc: "Real estate developers and builders in Bangalore, offering the best property development solutions in the city.",
+    projectLink: "https://charteredhousing.vercel.app/",
+    githubLink: "",
+    image:
+      "https://elasticbeanstalk-ap-south-1-058264440923.s3.ap-south-1.amazonaws.com/Portfolio/chartered-housing.png",
+  },
+  {
+    id: "Development Journey",
+    title: "Nxt Trendz",
+    desc: "Fashion is part of the daily air and it does not quite help that it changes all the time.",
+    projectLink: "https://shubhamecom.ccbp.tech/",
+    githubLink: "",
+    image: "/projects/nxt-trendz.png",
+  },
+  {
+    id: "Development Journey",
+    title: "Fly Buy",
+    desc: "Most online stores offer lower prices. Online shopping makes price comparison simpler and quicker.",
+    projectLink: "https://shubhamecomweb.ccbp.tech/",
+    githubLink: "",
+    image: "/projects/ecommerce.png",
   },
 ]
