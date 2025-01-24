@@ -33,7 +33,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <div className="background py-3">
+      <div className="background py-3 w-full">
         <div className="flex justify-between max-w-screen-2xl lg:px-10 mx-auto gap-5">
           {/* main container */}
           <div className="w-full">
