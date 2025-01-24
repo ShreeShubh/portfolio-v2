@@ -31,12 +31,12 @@ const Home = () => {
   })
 
   return (
-    <div className="overflow-hidden">
+    <>
       <Header />
-      <div className="background py-3 overflow-hidden">
+      <div className="background py-3">
         <div className="flex justify-between max-w-screen-2xl lg:px-10 mx-auto gap-5">
           {/* main container */}
-          <div className="w-full">
+          <div className="w-full overflow-hidden">
             <section id="introduction">
               <Introduction />
             </section>
@@ -65,7 +65,7 @@ const Home = () => {
         </div>
       </div>
       <Footer />
-    </div>
+    </>
   )
 }
 
