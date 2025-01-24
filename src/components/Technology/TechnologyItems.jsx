@@ -12,6 +12,14 @@ const TechnologyItems = () => {
             key={index}
             className="flex justify-center items-center bg-white rounded-xl px-5 ease-in-out duration-300 lg:hover:scale-125"
           >
+            <img
+              src={item.iconUrl}
+              width={50}
+              height={50}
+              alt={`client icon ${index + 1}`}
+              className="object-contain block md:hidden"
+              title={item.name}
+            />
             <button data-popover-target={`popover-${index}`} type="button">
               <img
                 src={item.iconUrl}
@@ -19,6 +27,7 @@ const TechnologyItems = () => {
                 height={50}
                 alt={`client icon ${index + 1}`}
                 className="object-contain"
+                title={item.name}
               />
             </button>
 
@@ -26,7 +35,7 @@ const TechnologyItems = () => {
               data-popover
               id={`popover-${index}`}
               role="tooltip"
-              className="absolute z-10 overflow-hidden invisible inline-block w-64 text-sm text-white transition-opacity duration-300 bg-primary-bg border border-gray-200 rounded-lg shadow-xs opacity-0"
+              className="hidden absolute z-10 invisible md:inline-block w-64 text-sm text-white transition-opacity duration-300 bg-primary-bg border border-gray-200 rounded-lg shadow-xs opacity-0"
             >
               <div className="px-3 py-2 bg-primary-text border-b border-gray-200 rounded-t-lg">
                 <h3 className="font-semibold text-primary-bg">{item.name}</h3>
