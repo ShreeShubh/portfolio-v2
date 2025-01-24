@@ -32,10 +32,7 @@ const Introduction = () => {
 
           {/* Mobile Image Section */}
 
-          <div
-            className="mt-7 lg:mt-0 block md:hidden"
-            //data-aos="fade-down"
-          >
+          <div className="mt-7 lg:mt-0 block md:hidden" data-aos="fade-down">
             <img src="/image01.png" className="w-50h-auto" alt="developer" />
           </div>
 
@@ -62,7 +59,7 @@ const Introduction = () => {
         {/* Image Section */}
         <div
           className="mt-7 mr-32 lg:mt-0 hidden md:block"
-          //data-aos="flip-right"
+          data-aos="flip-right"
         >
           <img
             src="/image01.png"
