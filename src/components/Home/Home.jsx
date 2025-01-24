@@ -31,7 +31,7 @@ const Home = () => {
   })
 
   return (
-    <>
+    <div className="overflow-hidden">
       <Header />
       <div className="background py-3 overflow-hidden">
         <div className="flex justify-between max-w-screen-2xl lg:px-10 mx-auto gap-5">
@@ -65,7 +65,7 @@ const Home = () => {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   )
 }
 
