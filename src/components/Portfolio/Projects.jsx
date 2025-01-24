@@ -1,6 +1,6 @@
 const Projects = ({ getFilteredProject }) => {
   return (
-    <div className="flex justify-center w-10/12">
+    <div className="flex justify-center w-full lg:w-10/12">
       <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-10 mt-6">
         {getFilteredProject().map((item, index) => (
           <li
