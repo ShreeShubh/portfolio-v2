@@ -5,7 +5,7 @@ const PortfolioTabs = ({ activeTab, handleActiveTab }) => {
     handleActiveTab(id)
   }
   return (
-    <ul className="bg-secondary-bg px-4 md:px-16 py-3 rounded-lg flex items-center gap-4 md:gap-8 shadow-lg">
+    <ul className="bg-secondary-bg px-4 md:px-16 py-3 rounded-lg flex justify-center items-center gap-4 md:gap-8 shadow-lg w-full md:w-auto">
       {tabs.map((item) => (
         <li key={item.id}>
           <button
