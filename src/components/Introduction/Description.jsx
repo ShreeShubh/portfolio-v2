@@ -23,26 +23,28 @@ const Description = () => {
   }, [isOpen])
 
   return (
-    <div className="w-full md:w-[572px] space-y-4 mt-5 lg:mt-10">
-      <h2 className="text-xl md:text-2xl font-semibold text-white text-center md:text-left">
-        Building Seamless Digital Solutions with{" "}
-        <br className="hidden md:block" />
-        MERN Expertise
-      </h2>
-      <p className="text-white text-sm md:text-lg text-justify">
-        We deliver top-tier web development services, blending innovation with
-        artistry to create captivating designs, flawless functionality, and
-        unforgettable user experiences. Our mission is to empower your business
-        with digital solutions that leave a lasting impression and drive
-        exceptional value for your customers.
-      </p>
-      <div className="flex justify-center md:justify-start mt-7">
-        <CustomButton onClick={handleContactForm}>
-          Let's work together
-        </CustomButton>
-      </div>
+    <>
+      <div className="w-full md:w-[572px] space-y-4 mt-5 lg:mt-10">
+        <h2 className="text-xl md:text-2xl font-semibold text-white text-center md:text-left">
+          Building Seamless Digital Solutions with{" "}
+          <br className="hidden md:block" />
+          MERN Expertise
+        </h2>
+        <p className="text-white text-sm md:text-lg text-justify">
+          We deliver top-tier web development services, blending innovation with
+          artistry to create captivating designs, flawless functionality, and
+          unforgettable user experiences. Our mission is to empower your
+          business with digital solutions that leave a lasting impression and
+          drive exceptional value for your customers.
+        </p>
+        <div className="flex justify-center md:justify-start mt-7">
+          <CustomButton onClick={handleContactForm}>
+            Let's work together
+          </CustomButton>
+        </div>
 
-      {/* Contact form */}
+        {/* Contact form */}
+      </div>
       {isOpen && (
         <div className="fixed inset-0 z-50 flex justify-center items-center bg-black bg-opacity-50 px-3">
           <div className="relative p-4 w-full max-w-3xl max-h-full bg-primary-bg rounded-lg shadow-xl border-2">
@@ -79,7 +81,7 @@ const Description = () => {
           </div>
         </div>
       )}
-    </div>
+    </>
   )
 }
 
