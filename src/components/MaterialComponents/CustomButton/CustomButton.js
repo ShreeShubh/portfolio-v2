@@ -1,7 +1,7 @@
 import Button from "@mui/material/Button"
 import { styled } from "@mui/material/styles"
 
-export const CustomButton = styled(Button)(({ theme }) => ({
+export const CustomButton = styled(Button)(() => ({
   backgroundColor: "#03FF9A", // Primary color
   color: "#001B39", // Text color
   padding: "8px 20px",
