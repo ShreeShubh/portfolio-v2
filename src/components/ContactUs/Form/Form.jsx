@@ -38,6 +38,7 @@ const Form = () => {
           className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-primary-text peer"
           placeholder=" "
           value={formData.firstname}
+          required
           onChange={(e) =>
             setFormData({ ...formData, firstname: e.target.value })
           }
@@ -57,6 +58,7 @@ const Form = () => {
           className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-primary-text peer"
           placeholder=" "
           value={formData.lastname}
+          required
           onChange={(e) =>
             setFormData({ ...formData, lastname: e.target.value })
           }
@@ -80,6 +82,7 @@ const Form = () => {
         className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-primary-text peer"
         placeholder=" "
         value={formData.email}
+        required
         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
       />
       <label
@@ -95,13 +98,13 @@ const Form = () => {
     <div className="grid md:grid-cols-2 md:gap-6">
       <div className="relative z-0 w-full mb-5 group">
         <input
-          type="tel"
-          //pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          type="text"
           name="floating_phone"
           id="floating_phone"
           className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-primary-text peer"
           placeholder=" "
           value={formData.mobile}
+          required
           onChange={(e) => setFormData({ ...formData, mobile: e.target.value })}
         />
         <label
