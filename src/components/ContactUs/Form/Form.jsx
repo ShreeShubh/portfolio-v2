@@ -13,25 +13,18 @@ const Form = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    setFormData({
-      firstname: "",
-      lastname: "",
-      email: "",
-      mobile: "",
-      company: "",
-    })
-    // try {
-    //   await addContact(formData)
-    //   setFormData({
-    //     firstname: "",
-    //     lastname: "",
-    //     email: "",
-    //     mobile: "",
-    //     company: "",
-    //   })
-    // } catch (error) {
-    //   console.error("Error creating contact:", error)
-    // }
+    try {
+      await addContact(formData)
+      setFormData({
+        firstname: "",
+        lastname: "",
+        email: "",
+        mobile: "",
+        company: "",
+      })
+    } catch (error) {
+      console.error("Error creating contact:", error)
+    }
     //console.log(formData)
   }
 
@@ -151,12 +144,6 @@ const Form = () => {
       {renderPhoneAndCompanyField()}
       <div className="mt-3">
         <CustomButton type="submit">Submit</CustomButton>
-        {/* <button
-          type="submit"
-          className="bg-primary-text text-primary-bg py-2 px-5 rounded-lg"
-        >
-          Submit
-        </button> */}
       </div>
     </form>
   )
