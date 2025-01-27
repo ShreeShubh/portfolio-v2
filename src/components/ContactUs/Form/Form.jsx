@@ -13,18 +13,25 @@ const Form = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    try {
-      await addContact(formData)
-      setFormData({
-        firstname: "",
-        lastname: "",
-        email: "",
-        mobile: "",
-        company: "",
-      })
-    } catch (error) {
-      console.error("Error creating contact:", error)
-    }
+    setFormData({
+      firstname: "",
+      lastname: "",
+      email: "",
+      mobile: "",
+      company: "",
+    })
+    // try {
+    //   await addContact(formData)
+    //   setFormData({
+    //     firstname: "",
+    //     lastname: "",
+    //     email: "",
+    //     mobile: "",
+    //     company: "",
+    //   })
+    // } catch (error) {
+    //   console.error("Error creating contact:", error)
+    // }
     //console.log(formData)
   }
 
@@ -36,6 +43,7 @@ const Form = () => {
           name="floating_first_name"
           id="floating_first_name"
           className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-primary-text peer"
+          placeholder=" "
           value={formData.firstname}
           required
           onChange={(e) =>
@@ -55,6 +63,7 @@ const Form = () => {
           name="floating_last_name"
           id="floating_last_name"
           className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-primary-text peer"
+          placeholder=" "
           value={formData.lastname}
           required
           onChange={(e) =>
@@ -78,6 +87,7 @@ const Form = () => {
         name="floating_email"
         id="floating_email"
         className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-primary-text peer"
+        placeholder=" "
         value={formData.email}
         required
         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -100,6 +110,7 @@ const Form = () => {
           name="floating_phone"
           id="floating_phone"
           className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-primary-text peer"
+          placeholder=" "
           value={formData.mobile}
           required
           onChange={(e) => setFormData({ ...formData, mobile: e.target.value })}
@@ -117,6 +128,7 @@ const Form = () => {
           name="floating_company"
           id="floating_company"
           className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-primary-text peer"
+          placeholder=" "
           value={formData.company}
           onChange={(e) =>
             setFormData({ ...formData, company: e.target.value })
