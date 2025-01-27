@@ -38,7 +38,6 @@ const Form = () => {
           className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-primary-text peer"
           placeholder=" "
           value={formData.firstname}
-          required
           onChange={(e) =>
             setFormData({ ...formData, firstname: e.target.value })
           }
@@ -58,7 +57,6 @@ const Form = () => {
           className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-primary-text peer"
           placeholder=" "
           value={formData.lastname}
-          required
           onChange={(e) =>
             setFormData({ ...formData, lastname: e.target.value })
           }
@@ -82,7 +80,6 @@ const Form = () => {
         className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-primary-text peer"
         placeholder=" "
         value={formData.email}
-        required
         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
       />
       <label
@@ -105,7 +102,6 @@ const Form = () => {
           className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-primary-text peer"
           placeholder=" "
           value={formData.mobile}
-          required
           onChange={(e) => setFormData({ ...formData, mobile: e.target.value })}
         />
         <label
@@ -143,13 +139,13 @@ const Form = () => {
       {renderEmailField()}
       {renderPhoneAndCompanyField()}
       <div className="mt-3">
-        {/* <CustomButton type="submit">Submit</CustomButton> */}
-        <button
+        <CustomButton type="submit">Submit</CustomButton>
+        {/* <button
           type="submit"
           className="bg-primary-text text-primary-bg py-2 px-5 rounded-lg"
         >
           Submit
-        </button>
+        </button> */}
       </div>
     </form>
   )
