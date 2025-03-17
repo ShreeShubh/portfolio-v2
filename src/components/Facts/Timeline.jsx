@@ -16,19 +16,25 @@ const Timeline = () => {
           </svg>
         </span>
         <h3 className="flex items-center mb-1 text-lg font-semibold text-primary-text">
-          iVistaz Ecom Services Pvt Ltd{" "}
+          iVistaz Ecom Services Pvt Ltd, Bengaluru — Web Developer{" "}
           <span className="bg-primary-text text-primary-bg text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-3">
             Latest
           </span>
         </h3>
         <time className="block mb-2 text-sm font-normal leading-none text-white">
-          Released on January 13th, 2022
+          MAR 2024 - PRESENT
         </time>
         <p className="mb-4 text-base font-normal text-secondary-text">
-          Get access to over 20+ pages including a dashboard layout, charts,
-          kanban board, calendar, and pre-order E-commerce & Marketing pages.
+          Develop and maintain highly responsive UI for{" "}
+          <strong>web applications</strong> and {""}
+          <strong>websites</strong> using <strong>MERN</strong> technology.
+          Collaborate with cross-functional teams and ensure technical
+          feasibility of UI/UX designs, implement best practices in code
+          quality, security, and performance, perform code reviews, debug
+          issues, and provide technical support in all phases of the development
+          cycle.
         </p>
-        <a
+        {/* <a
           href="#"
           className="inline-flex items-center px-4 py-2 text-sm font-medium text-primary-bg bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700"
         >
@@ -43,7 +49,7 @@ const Timeline = () => {
             <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
           </svg>{" "}
           Download ZIP
-        </a>
+        </a> */}
       </li>
       <li className="mb-10 ms-6">
         <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white">
@@ -58,14 +64,20 @@ const Timeline = () => {
           </svg>
         </span>
         <h3 className="mb-1 text-lg font-semibold text-primary-text">
-          Nxtwave Disruptive Technologies
+          Nxtwave Disruptive Technologies, Hyderabad — MERN Stack Development
+          (Training)
         </h3>
         <time className="block mb-2 text-sm font-normal leading-none text-white">
-          Released on December 7th, 2021
+          MAY 2022 - FEB 2024
         </time>
         <p className="text-base font-normal text-secondary-text">
-          All of the pages and components are first designed in Figma and we
-          keep a parity between the two versions even as we update the project.
+          Gained hands-on experience in{" "}
+          <strong>HTML, CSS, JavaScript, Python, React.js, Node.js,</strong> and{" "}
+          <strong>SQLite</strong> through a <strong>MERN stack course</strong>.
+          Developed proficiency in <strong>full-stack development</strong>,
+          including building responsive web apps, managing databases, and
+          integrating APIs. Completed projects showcasing problem-solving
+          skills.
         </p>
       </li>
       <li className="ms-6">
@@ -81,14 +93,14 @@ const Timeline = () => {
           </svg>
         </span>
         <h3 className="mb-1 text-lg font-semibold text-primary-text">
-          Flowbite Library v1.2.2
+          EMBIBE, Bengaluru — Academic Validator (Freelancing)
         </h3>
         <time className="block mb-2 text-sm font-normal leading-none text-white">
-          Released on December 2nd, 2021
+          FEB 2021- SEP 2023
         </time>
         <p className="text-base font-normal text-secondary-text">
-          Get started with dozens of web components and interactive elements
-          built on top of Tailwind CSS.
+          Validate and translate questions/answers or scripts for punctuation,
+          grammar, and translation errors.
         </p>
       </li>
     </ol>

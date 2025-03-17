@@ -21,7 +21,7 @@ const Scrollspy = ({ sectionData }) => {
           }
         })
       },
-      { root: null, rootMargin: "0px", threshold: 0.2 } // Adjust threshold for better accuracy
+      { root: null, rootMargin: "0px", threshold: 0.3 } // Adjust threshold for better accuracy
     )
 
     // Observe each section

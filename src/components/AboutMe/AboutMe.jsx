@@ -28,7 +28,7 @@ const AboutMe = () => {
         {/* Image Section */}
         <div
           className="w-full lg:w-auto flex-shrink-0"
-          data-aos="zoom-in-up"
+          //data-aos="zoom-in-up"
           data-aos-duration="600"
         >
           <img

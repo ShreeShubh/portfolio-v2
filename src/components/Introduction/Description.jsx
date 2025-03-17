@@ -47,7 +47,7 @@ const Description = () => {
       </div>
       {isOpen && (
         <div className="fixed inset-0 z-50 flex justify-center items-center bg-black bg-opacity-50 px-3">
-          <div className="relative p-4 w-full max-w-3xl max-h-full bg-primary-bg rounded-lg shadow-xl border-2">
+          <div className="relative p-4 w-full max-w-3xl max-h-full bg-primary-bg rounded-lg shadow-xl border-2 px-2">
             <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
               <h3 className="text-xl font-semibold text-primary-text">
                 Contact Form
