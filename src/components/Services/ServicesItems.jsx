@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { servicesData } from "../../utils/data"
 import { arrow } from "../../utils/icon"
 import { CustomButton } from "../MaterialComponents/CustomButton/CustomButton"
+import { FollowingPointerDemo } from "../Animation/Card/Card"
 
 const ServicesItems = () => {
   const [activeModal, setActiveModal] = useState(null)
@@ -31,7 +32,7 @@ const ServicesItems = () => {
       {servicesData.map((item, index) => (
         <li
           key={index}
-          className="w-full max-w-[350px] h-full px-7 py-5 rounded-lg flex flex-col items-start gap-5 text-white bg-[#102640] hover:bg-primary-text hover:text-primary-bg hover:cursor-pointer relative group shadow-lg mx-auto"
+          className="w-full max-w-[350px] h-full px-7 py-5 rounded-lg flex flex-col items-start gap-5 text-white bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900 hover:cursor-pointer relative group shadow-lg mx-auto"
         >
           {/* Icon and Title */}
           <div className="space-y-4">
@@ -39,13 +40,13 @@ const ServicesItems = () => {
               <img
                 src={item.lightIconUrl}
                 alt={item.title}
-                className="h-full w-full object-contain group-hover:hidden"
+                className="h-full w-full object-contain"
               />
-              <img
+              {/* <img
                 src={item.darkIconUrl}
                 alt={item.title}
                 className="h-full w-full object-contain hidden group-hover:block"
-              />
+              /> */}
             </div>
             <p className="text-lg font-semibold">{item.title}</p>
           </div>
@@ -56,10 +57,10 @@ const ServicesItems = () => {
           {/* Read More Button */}
           <button
             onClick={() => openModal(index)}
-            className="font-semibold flex items-center gap-4"
+            className="font-semibold flex items-center gap-4 group-hover:text-primary-text"
           >
             Read More
-            <span className="transition-transform duration-300 ease-in-out transform group-hover:translate-x-2">
+            <span className="transition-transform duration-300 ease-in-out transform group-hover:text-primary-text group-hover:translate-x-2">
               {arrow}
             </span>
           </button>
@@ -119,6 +120,7 @@ const ServicesItems = () => {
             </div>
           )}
         </li>
+        // <FollowingPointerDemo />
       ))}
     </ul>
   )

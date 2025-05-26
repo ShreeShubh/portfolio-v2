@@ -10,11 +10,12 @@ import Footer from "../Footer/Footer"
 import ContactUs from "../ContactUs/ContactUs"
 import AOS from "aos"
 import Technology from "../Technology/Technology"
+import { BackgroundBeams } from "../ui/background-beams"
 
 const Home = () => {
   const sectionData = [
     { id: "introduction", title: "Introduction" },
-    { id: "aboutMe", title: "About Me" },
+    { id: "aboutMe", title: "About Us" },
     { id: "professionalExperties", title: "Services" },
     { id: "technology", title: "Technology" },
     { id: "facts", title: "Facts" },
@@ -33,37 +34,40 @@ const Home = () => {
   return (
     <>
       <Header />
+      <section id="introduction">
+        <Introduction />
+      </section>
+      <section id="professionalExperties">
+        <Services />
+      </section>
+      <section id="portfolio">
+        <Portfolio />
+      </section>
+      <section id="aboutMe">
+        <AboutMe />
+      </section>
+
       <div className="background py-3">
         <div className="flex justify-between max-w-screen-2xl lg:px-10 mx-auto gap-5">
           {/* main container */}
           <div className="w-full overflow-hidden">
-            <section id="introduction">
-              <Introduction />
-            </section>
-            <section id="aboutMe">
-              <AboutMe />
-            </section>
-            <section id="professionalExperties">
-              <Services />
-            </section>
             <section id="technology">
               <Technology />
             </section>
             <section id="facts">
               <Facts />
             </section>
-            <section id="portfolio">
-              <Portfolio />
-            </section>
+
             <section id="contactUs">
               <ContactUs />
             </section>
           </div>
-
+          <BackgroundBeams />
           {/* scrollspy section */}
-          <Scrollspy sectionData={sectionData} />
+          {/* <Scrollspy sectionData={sectionData} /> */}
         </div>
       </div>
+
       <Footer />
     </>
   )

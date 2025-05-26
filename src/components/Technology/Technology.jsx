@@ -15,7 +15,7 @@ const Technology = () => {
         </div>
 
         {/* Journey Section */}
-        <div className="bg-[#0B223E] p-8 md:p-10 lg:p-12 flex flex-col gap-5 shadow-lg rounded-lg max-w-screen-lg">
+        <div className="bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900 p-8 md:p-10 lg:p-12 flex flex-col gap-5 shadow-lg rounded-lg max-w-screen-lg">
           <TechnologyItems />
         </div>
       </div>

@@ -24,13 +24,13 @@ const Description = () => {
 
   return (
     <>
-      <div className="w-full md:w-[572px] space-y-4 mt-5 lg:mt-10">
+      <div className="space-y-4 mt-5 lg:mt-10">
         <h2 className="text-xl md:text-2xl font-semibold text-white text-center md:text-left">
           Building Seamless Digital Solutions with{" "}
           <br className="hidden md:block" />
           MERN Expertise
         </h2>
-        <p className="text-white text-sm md:text-lg text-justify">
+        <p className="text-white text-sm md:text-lg font-light">
           We deliver top-tier web development services, blending innovation with
           artistry to create captivating designs, flawless functionality, and
           unforgettable user experiences. Our mission is to empower your

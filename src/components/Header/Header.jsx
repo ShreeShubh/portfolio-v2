@@ -4,8 +4,8 @@ import { CustomButton } from "../MaterialComponents/CustomButton/CustomButton"
 
 const Header = () => {
   return (
-    <nav className="px-4 md:px-10 py-3 bg-primary-bg/60 fixed top-0 w-full z-50 backdrop-blur-md border-b border-secondary-bg">
-      <div className="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto">
+    <nav className="px-4 py-3 bg-neutral-950 fixed top-0 w-full z-50 backdrop-blur-md border-b border-gray-600">
+      <div className="flex flex-wrap items-center justify-between max-w-screen-lg mx-auto">
         {/* Logo Container */}
         <div>
           <span className="font-montserrat text-3xl md:text-5xl text-primary-text font-semibold">
