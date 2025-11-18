@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react"
-import { CustomButton } from "../MaterialComponents/CustomButton/CustomButton"
-import Form from "../ContactUs/Form/Form"
-import { TextHoverEffectDemo } from "../Animation/TextHover/TextHover"
+import React, { useEffect, useState } from 'react'
+import { CustomButton } from '../MaterialComponents/CustomButton/CustomButton'
+import Form from '../ContactUs/Form/Form'
+import { TextHoverEffectDemo } from '../Animation/TextHover/TextHover'
+import FormModal from '../FormModal/FormModal'
 
 const AboutMe = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -13,76 +14,56 @@ const AboutMe = () => {
 
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = "hidden"
+      document.body.style.overflow = 'hidden'
     } else {
-      document.body.style.overflow = "auto"
+      document.body.style.overflow = 'auto'
     }
 
     return () => {
-      document.body.style.overflow = "auto"
+      document.body.style.overflow = 'auto'
     }
   }, [isOpen])
 
   return (
-    <div className="bg-neutral-950 px-4 min-h-screen py-14">
+    <div className="px-4 py-16">
       <div className="max-w-screen-lg mx-auto">
         <TextHoverEffectDemo text="ABOUT US" />
 
-        <div className="flex items-center gap-10 lg:gap-20">
-          {/* Image Section */}
-          <div
-            className="flex-shrink-0"
-            //data-aos="zoom-in-up"
+        {/* MAIN SECTION */}
+        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20 mt-10">
+          {/* IMAGE */}
+          <img
+            src="/image02.png"
+            alt="developer"
+            className="mix-blend-luminosity w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[350px]"
             data-aos-duration="600"
-          >
-            <img
-              src="/image02.png"
-              alt="developer"
-              className="mix-blend-luminosity w-full max-w-[350px]"
-            />
-          </div>
+          />
 
-          {/* Content Section */}
+          {/* CONTENT */}
+          <div className="space-y-6">
+            <h3 className="text-white font-extrabold text-2xl md:text-3xl">
+              About <span className="text-primary-text">Me</span>
+            </h3>
 
-          <div className="space-y-5">
-            {/* Heading */}
-
-            <div className="">
-              {/* <h2 className="text-secondary-text text-5xl md:text-7xl font-extrabold">
-                About Us
-              </h2> */}
-              <h3 className="text-white font-extrabold text-2xl md:text-3xl">
-                About <span className="text-primary-text">Me</span>
-              </h3>
-            </div>
-
-            {/* Description */}
-            <div className="space-y-4 text-white text-sm md:text-lg mt-5">
+            <div className="space-y-4 text-white text-sm md:text-lg">
               <p>
                 Hello! I’m Shubham Shree, a passionate web developer with a
                 flair for crafting innovative digital solutions using the MERN
-                Stack. My journey began at NxtWave, Hyderabad, where I immersed
-                myself in hands-on training, mastering the art of building
-                everything from sleek, responsive designs to powerful, dynamic
-                web applications.
+                Stack. Trained at NxtWave, Hyderabad, I’ve mastered building
+                everything from sleek UI to robust web applications.
               </p>
               <p>
-                With over 15 successful client projects under my belt, I’ve
-                proven my ability to deliver top-notch solutions that combine
-                creativity, functionality, and punctuality. I thrive on tackling
-                challenges, exploring emerging technologies, and turning complex
-                ideas into seamless user experiences.
+                With over 15 successful client projects, I deliver solutions
+                combining creativity, functionality, and punctuality. I love
+                solving challenges, exploring new technologies, and creating
+                seamless user experiences.
               </p>
               <p>
-                An open-minded tech enthusiast at heart, I’m always eager to
-                learn, grow, and collaborate. Whether it’s solving a tricky
-                problem or bringing bold visions to life, I’m here to create
-                digital experiences that leave a lasting impact. Let’s transform
-                ideas into reality together!
+                As an open-minded tech enthusiast, I’m always eager to learn and
+                collaborate. Let’s bring ideas to life together!
               </p>
             </div>
 
-            {/* Button */}
             <div className="flex justify-center lg:justify-start">
               <CustomButton onClick={handleContactForm}>
                 Let's work together
@@ -91,43 +72,8 @@ const AboutMe = () => {
           </div>
         </div>
 
-        {/* Contact form */}
-        {isOpen && (
-          <div className="fixed inset-0 z-50 flex justify-center items-center bg-black bg-opacity-50 px-3">
-            <div className="relative p-4 w-full max-w-3xl max-h-full bg-primary-bg rounded-lg shadow-xl border-2">
-              <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
-                <h3 className="text-xl font-semibold text-primary-text">
-                  Contact Form
-                </h3>
-                <button
-                  type="button"
-                  onClick={handleContactForm}
-                  className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 flex justify-center items-center"
-                >
-                  <svg
-                    className="w-3 h-3"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 14"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-                    />
-                  </svg>
-                  <span className="sr-only">Close modal</span>
-                </button>
-              </div>
-              <div className="bg-primary-bg p-8 md:p-10 rounded-lg shadow-lg flex flex-col gap-10">
-                <Form />
-              </div>
-            </div>
-          </div>
-        )}
+        {/* CONTACT FORM MODAL */}
+        {isOpen && <FormModal handleContactForm={handleContactForm} />}
       </div>
     </div>
   )

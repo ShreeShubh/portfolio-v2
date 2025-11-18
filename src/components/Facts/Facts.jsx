@@ -1,16 +1,15 @@
-import Timeline from "./Timeline"
-import Clients from "./Clients"
+import Timeline from './Timeline'
+import Clients from './Clients'
+import { TextHoverEffectDemo } from '../Animation/TextHover/TextHover'
 
 const Facts = () => {
   return (
-    <div className="min-h-screen px-4 md:px-10 py-10 mt-7">
-      <div className="space-y-10 max-w-screen-xl mx-auto">
+    <div className="px-4 md:px-10 py-10 mt-7">
+      <div className="max-w-screen-lg mx-auto">
         {/* Heading */}
         <div className="">
-          <h2 className="text-secondary-text text-5xl md:text-7xl font-extrabold">
-            Facts
-          </h2>
-          <h3 className="text-white font-extrabold text-2xl md:text-3xl">
+          <TextHoverEffectDemo text="Facts" />
+          <h3 className="text-white font-extrabold text-2xl md:text-3xl text-center mb-7">
             About <span className="text-primary-text">Journey</span>
           </h3>
         </div>

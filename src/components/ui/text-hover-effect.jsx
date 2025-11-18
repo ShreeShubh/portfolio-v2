@@ -1,13 +1,13 @@
-import React, { useRef, useEffect, useState } from "react"
-import { motion } from "motion/react"
-import { useId } from "react"
+import React, { useRef, useEffect, useState } from 'react'
+import { motion } from 'motion/react'
+import { useId } from 'react'
 
 export const TextHoverEffect = ({ text, duration }) => {
   const uniqueId = useId()
   const svgRef = useRef(null)
   const [cursor, setCursor] = useState({ x: 0, y: 0 })
   const [hovered, setHovered] = useState(false)
-  const [maskPosition, setMaskPosition] = useState({ cx: "50%", cy: "50%" })
+  const [maskPosition, setMaskPosition] = useState({ cx: '50%', cy: '50%' })
 
   useEffect(() => {
     if (svgRef.current && cursor.x !== null && cursor.y !== null) {
@@ -31,6 +31,7 @@ export const TextHoverEffect = ({ text, duration }) => {
       width="100%"
       height="100%"
       viewBox="0 0 300 100"
+      preserveAspectRatio="xMidYMid meet"
       xmlns="http://www.w3.org/2000/svg"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
@@ -60,9 +61,9 @@ export const TextHoverEffect = ({ text, duration }) => {
           id={revealMaskId}
           gradientUnits="userSpaceOnUse"
           r="20%"
-          initial={{ cx: "50%", cy: "50%" }}
+          initial={{ cx: '50%', cy: '50%' }}
           animate={maskPosition}
-          transition={{ duration: duration ?? 0, ease: "easeOut" }}
+          transition={{ duration: duration ?? 0, ease: 'easeOut' }}
         >
           <stop offset="0%" stopColor="white" />
           <stop offset="100%" stopColor="black" />
@@ -105,7 +106,7 @@ export const TextHoverEffect = ({ text, duration }) => {
         }}
         transition={{
           duration: 4,
-          ease: "easeInOut",
+          ease: 'easeInOut',
         }}
       >
         {text}

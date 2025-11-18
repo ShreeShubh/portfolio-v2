@@ -1,14 +1,14 @@
-import React, { useState } from "react"
-import { CustomButton } from "../../MaterialComponents/CustomButton/CustomButton"
-import { addContact } from "../../../services/api"
+import React, { useState } from 'react'
+import { CustomButton } from '../../MaterialComponents/CustomButton/CustomButton'
+import { addContact } from '../../../services/api'
 
 const Form = () => {
   const [formData, setFormData] = useState({
-    firstname: "",
-    lastname: "",
-    email: "",
-    mobile: "",
-    company: "",
+    firstname: '',
+    lastname: '',
+    email: '',
+    mobile: '',
+    company: '',
   })
   const [showLoader, SetShowLoader] = useState(false)
   const [showMessase, setShowMessage] = useState(false)
@@ -19,11 +19,11 @@ const Form = () => {
     try {
       await addContact(formData)
       setFormData({
-        firstname: "",
-        lastname: "",
-        email: "",
-        mobile: "",
-        company: "",
+        firstname: '',
+        lastname: '',
+        email: '',
+        mobile: '',
+        company: '',
       })
 
       SetShowLoader(false)
@@ -33,7 +33,7 @@ const Form = () => {
       //   setShowMessage(false)
       // }, 5000)
     } catch (error) {
-      console.error("Error creating contact:", error)
+      console.error('Error creating contact:', error)
       SetShowLoader(false)
     }
     //console.log(formData)
@@ -41,7 +41,7 @@ const Form = () => {
 
   const renderNameField = () => (
     <div className="grid md:grid-cols-2 md:gap-6">
-      <div className="relative z-0 w-full mb-5 group">
+      <div className="relative w-full mb-5 group">
         <input
           type="text"
           name="floating_first_name"
@@ -61,7 +61,7 @@ const Form = () => {
           First name
         </label>
       </div>
-      <div className="relative z-0 w-full mb-5 group">
+      <div className="relative w-full mb-5 group">
         <input
           type="text"
           name="floating_last_name"
@@ -85,7 +85,7 @@ const Form = () => {
   )
 
   const renderEmailField = () => (
-    <div className="relative z-0 w-full mb-5 group">
+    <div className="relative w-full mb-5 group">
       <input
         type="email"
         name="floating_email"
@@ -107,7 +107,7 @@ const Form = () => {
 
   const renderPhoneAndCompanyField = () => (
     <div className="grid md:grid-cols-2 md:gap-6">
-      <div className="relative z-0 w-full mb-5 group">
+      <div className="relative w-full mb-5 group">
         <input
           type="tel"
           //pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
@@ -126,7 +126,7 @@ const Form = () => {
           Phone number
         </label>
       </div>
-      <div className="relative z-0 w-full mb-5 group">
+      <div className="relative w-full mb-5 group">
         <input
           type="text"
           name="floating_company"
@@ -152,7 +152,7 @@ const Form = () => {
     <>
       {showMessase ? (
         <p className="text-primary-text font-semibold transition-opacity duration-500 ease-in-out opacity-100">
-          Thank you for connecting!{" "}
+          Thank you for connecting!{' '}
           <span className="text-white font-normal">
             Expect to hear from our creative crew shortly.
           </span>
@@ -163,7 +163,7 @@ const Form = () => {
         </p>
       )}
 
-      <form className="max-w-2xl" onSubmit={handleSubmit}>
+      <form className="max-w-2xl z-[9999999]" onSubmit={handleSubmit}>
         {renderNameField()}
         {renderEmailField()}
         {renderPhoneAndCompanyField()}
