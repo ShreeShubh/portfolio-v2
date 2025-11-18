@@ -28,15 +28,11 @@ const Form = () => {
 
       SetShowLoader(false)
       setShowMessage(true)
-
-      // setTimeout(() => {
-      //   setShowMessage(false)
-      // }, 5000)
     } catch (error) {
       console.error('Error creating contact:', error)
       SetShowLoader(false)
     }
-    //console.log(formData)
+    console.log(formData)
   }
 
   const renderNameField = () => (
