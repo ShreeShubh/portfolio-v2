@@ -5,7 +5,7 @@ import ServicesItems from './ServicesItems'
 
 const ProfessionalExperties = () => {
   return (
-    <div className="bg-neutral-950 px-4 min-h-screen pb-14 relative">
+    <div className="bg-neutral-950 px-4 min-h-screen pb-14">
       <div className="py-10 px-4 md:px-10 relative max-w-screen-lg mx-auto">
         <div className="space-y-10 max-w-screen-xl mx-auto">
           {/* Heading */}

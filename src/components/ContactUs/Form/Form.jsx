@@ -158,12 +158,12 @@ const Form = () => {
           </span>
         </p>
       ) : (
-        <p className="text-primary-text font-semibold">
+        <p className="text-primary-text font-semibold mb-5">
           Fill this form to connecting us!
         </p>
       )}
 
-      <form className="max-w-2xl z-[9999999]" onSubmit={handleSubmit}>
+      <form className="max-w-3xl z-[9999]" onSubmit={handleSubmit}>
         {renderNameField()}
         {renderEmailField()}
         {renderPhoneAndCompanyField()}
