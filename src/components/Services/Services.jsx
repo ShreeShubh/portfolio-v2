@@ -7,7 +7,7 @@ const ProfessionalExperties = () => {
   return (
     <div className="bg-neutral-950 px-4 min-h-screen pb-14">
       <div className="py-10 px-4 md:px-10 relative max-w-screen-lg mx-auto">
-        <div className="space-y-10 max-w-screen-xl mx-auto">
+        <div className="space-y-10">
           {/* Heading */}
           <div className="">
             {/* <h2 className="text-secondary-text text-5xl md:text-7xl font-extrabold">
@@ -21,7 +21,7 @@ const ProfessionalExperties = () => {
 
           {/* Services Grid */}
           {/* <ServicesItems /> */}
-          <div className="max-w-5xl mx-auto px-8">
+          <div>
             <HoverEffect items={projects} />
           </div>
         </div>
