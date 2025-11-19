@@ -7,15 +7,15 @@
 
 export const addContact = async (formData) => {
   const scriptURL =
-    'https://script.google.com/macros/s/AKfycbzgcRpicjLZzXS4qNfDaAm7aTW_LWuKzyrnssUfIYFHFbmN_mTglwI73coalDRsD1AH/exec'
+    'https://script.google.com/macros/s/AKfycbx1prZW0zKHZRCxqgaeAMHgfiU6vxSQUdGLndqlt1FcshPG-Vk8o_TJYYQxIGg6qgTI/exec'
 
   const response = await fetch(scriptURL, {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json',
+      'Content-Type': 'application/x-www-form-urlencoded',
     },
-    body: JSON.stringify(formData),
+    body: formData,
   })
 
-  return response.json() // <-- optional
+  return response // <-- optional
 }
