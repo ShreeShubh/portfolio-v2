@@ -1,4 +1,4 @@
-import { journeyData } from "../../utils/data"
+import { journeyData } from '../../utils/data'
 
 const Timeline = () => {
   return (
@@ -16,17 +16,49 @@ const Timeline = () => {
           </svg>
         </span>
         <h3 className="flex items-center mb-1 text-lg font-semibold text-primary-text">
-          iVistaz Ecom Services Pvt Ltd, Bengaluru — Web Developer{" "}
+          Bvalue Services Pvt Ltd, Bengaluru — Assistant Manager, Frontend
+          Developer{' '}
           <span className="bg-primary-text text-primary-bg text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-3">
             Latest
           </span>
         </h3>
         <time className="block mb-2 text-sm font-normal leading-none text-white">
-          MAR 2024 - PRESENT
+          August 2025 – Present
         </time>
         <p className="mb-4 text-base font-normal text-secondary-text">
-          Develop and maintain highly responsive UI for{" "}
-          <strong>web applications</strong> and {""}
+          Leading the development and maintenance of scalable, high-performance
+          web applications using React.js and Next.js. Integrate RESTful APIs to
+          optimize frontend–backend data flow and ensure seamless user
+          experience. Collaborate in sprint planning, provide technical
+          solutions during cross-functional discussions, and mentor junior
+          developers. Responsible for debugging, testing, and optimizing code
+          for performance and scalability.
+        </p>
+      </li>
+      <li className="mb-10 ms-6">
+        <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white ">
+          <svg
+            className="w-2.5 h-2.5 text-blue-80"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+          </svg>
+        </span>
+        <h3 className="flex items-center mb-1 text-lg font-semibold text-primary-text">
+          iVistaz Ecom Services Pvt Ltd, Bengaluru — Web Developer{' '}
+          {/* <span className="bg-primary-text text-primary-bg text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-3">
+            Latest
+          </span> */}
+        </h3>
+        <time className="block mb-2 text-sm font-normal leading-none text-white">
+          March 2024 – July 2025
+        </time>
+        <p className="mb-4 text-base font-normal text-secondary-text">
+          Develop and maintain highly responsive UI for{' '}
+          <strong>web applications</strong> and {''}
           <strong>websites</strong> using <strong>MERN</strong> technology.
           Collaborate with cross-functional teams and ensure technical
           feasibility of UI/UX designs, implement best practices in code
@@ -71,36 +103,11 @@ const Timeline = () => {
           MAY 2022 - FEB 2024
         </time>
         <p className="text-base font-normal text-secondary-text">
-          Gained hands-on experience in{" "}
-          <strong>HTML, CSS, JavaScript, Python, React.js, Node.js,</strong> and{" "}
-          <strong>SQLite</strong> through a <strong>MERN stack course</strong>.
-          Developed proficiency in <strong>full-stack development</strong>,
-          including building responsive web apps, managing databases, and
-          integrating APIs. Completed projects showcasing problem-solving
-          skills.
-        </p>
-      </li>
-      <li className="ms-6">
-        <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white">
-          <svg
-            className="w-2.5 h-2.5 text-blue-80"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-          </svg>
-        </span>
-        <h3 className="mb-1 text-lg font-semibold text-primary-text">
-          EMBIBE, Bengaluru — Academic Validator (Freelancing)
-        </h3>
-        <time className="block mb-2 text-sm font-normal leading-none text-white">
-          FEB 2021- SEP 2023
-        </time>
-        <p className="text-base font-normal text-secondary-text">
-          Validate and translate questions/answers or scripts for punctuation,
-          grammar, and translation errors.
+          Built strong expertise in HTML, CSS, JavaScript, Python, React.js,
+          Node.js, and SQLite through an intensive web development training
+          program. Completed full-stack development projects, built robust
+          databases, and implemented API integrations. Gained advanced skills in
+          troubleshooting, deployment, and delivering real-world web solutions.
         </p>
       </li>
     </ol>

@@ -36,7 +36,9 @@ const Introduction = () => {
           <Description />
         </div>
         <div
-        //data-aos="fade-left"
+          //data-aos="fade-left"
+          role="img"
+          aria-label="Animation showing web development process with coding and design elements"
         >
           <DotLottieReact
             src="https://lottie.host/7dd42b33-76da-444b-83ac-8f69a6235a8f/KKdrPUssHL.lottie"

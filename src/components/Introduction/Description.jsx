@@ -26,21 +26,27 @@ const Description = () => {
   return (
     <>
       <div className="space-y-4 mt-5 lg:mt-10">
-        <h2 className="text-xl md:text-2xl font-semibold text-white text-center md:text-left">
-          Building Seamless Digital Solutions with{' '}
+        <h1 className="text-xl md:text-2xl font-semibold text-white text-center md:text-left">
+          Custom Web Development Solutions for{' '}
           <br className="hidden md:block" />
-          MERN Expertise
-        </h2>
-        <p className="text-white text-sm md:text-lg font-light">
+          Business Growth
+        </h1>
+        {/* <p className="text-white text-sm md:text-lg font-light">
           We deliver top-tier web development services, blending innovation with
           artistry to create captivating designs, flawless functionality, and
           unforgettable user experiences. Our mission is to empower your
           business with digital solutions that leave a lasting impression and
           drive exceptional value for your customers.
+        </p> */}
+        <p className="text-white text-sm md:text-lg font-light">
+          Expertly crafted websites designed to captivate your audience, deliver
+          seamless user experiences, and boost your online presence. From
+          responsive design to scalable development, our team builds powerful
+          digital solutions tailored to your unique needs.
         </p>
         <div className="flex justify-center md:justify-start mt-7">
           <CustomButton onClick={handleContactForm}>
-            Let's work together
+            Start Your Digital Transformation Today
           </CustomButton>
         </div>
 

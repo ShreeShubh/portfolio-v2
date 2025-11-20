@@ -69,6 +69,7 @@ export const CardTitle = ({ className, children }) => {
     </h4>
   )
 }
+
 export const CardDescription = ({ className, children }) => {
   return (
     <p

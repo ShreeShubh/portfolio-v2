@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Header from '../Header/Header'
 import Introduction from '../Introduction/Introduction'
-import AboutMe from '../AboutMe/AboutMe'
+import About from '../About/About'
 import Services from '../Services/Services'
 import Facts from '../Facts/Facts'
 import Portfolio from '../Portfolio/Portfolio'
@@ -37,7 +37,7 @@ const Home = () => {
         <Introduction />
         <Services />
         <Portfolio />
-        <AboutMe />
+        <About />
         <Technology />
         <Facts />
         <ContactUs />

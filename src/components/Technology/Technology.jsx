@@ -3,7 +3,7 @@ import TechnologyItems from './TechnologyItems'
 
 const Technology = () => {
   return (
-    <div className="px-4 md:px-10 py-10 mt-7">
+    <div id="techStack" className="px-4 md:px-10 py-10 mt-7">
       <div className="max-w-screen-lg mx-auto">
         {/* Heading */}
         <div className="">

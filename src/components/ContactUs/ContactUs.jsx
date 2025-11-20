@@ -4,8 +4,8 @@ import { TextHoverEffectDemo } from '../Animation/TextHover/TextHover'
 
 const ContactUs = () => {
   return (
-    <div className="px-4 md:px-10 pt-10 pb-14 mt-7">
-      <div className="space-y-10 max-w-screen-lg mx-auto">
+    <div id="contact" className="px-4 md:px-10 pt-16 pb-14 mt-7">
+      <div className="space-y-10 max-w-screen-lg mx-auto w-full">
         {/* Heading */}
         <div className="">
           <TextHoverEffectDemo text="Contact Us" />

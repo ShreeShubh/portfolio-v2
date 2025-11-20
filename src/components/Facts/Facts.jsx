@@ -4,7 +4,7 @@ import { TextHoverEffectDemo } from '../Animation/TextHover/TextHover'
 
 const Facts = () => {
   return (
-    <div className="px-4 md:px-10 py-10 mt-7">
+    <div id="journey" className="px-4 md:px-10 py-16 mt-7">
       <div className="max-w-screen-lg mx-auto">
         {/* Heading */}
         <div className="">

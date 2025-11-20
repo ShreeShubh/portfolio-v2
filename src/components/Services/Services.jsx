@@ -5,7 +5,7 @@ import ServicesItems from './ServicesItems'
 
 const ProfessionalExperties = () => {
   return (
-    <div className="bg-neutral-950 px-4 min-h-screen pb-14">
+    <div id="services" className="px-4 py-16">
       <div className="py-10 px-4 md:px-10 relative max-w-screen-lg mx-auto">
         <div className="space-y-10">
           {/* Heading */}
@@ -35,39 +35,39 @@ export default ProfessionalExperties
 
 export const projects = [
   {
-    title: 'Stripe',
+    title: 'Custom Website Development',
     description:
-      'A technology company that builds economic infrastructure for the internet.',
-    link: 'https://stripe.com',
+      'Build robust, responsive, and user-centric websites tailored to your business goals. Our team delivers cutting-edge custom web development to help you grow and engage your audience effectively.',
+    link: '',
   },
   {
-    title: 'Netflix',
+    title: 'E-commerce Solutions',
     description:
-      'A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.',
-    link: 'https://netflix.com',
+      'Launch, manage, and scale your online store with secure, high-performance e-commerce web development. We integrate payment gateways and optimize your platform for conversions and sales growth.',
+    link: '',
   },
   {
-    title: 'Google',
+    title: 'UI/UX Design',
     description:
-      'A multinational technology company that specializes in Internet-related services and products.',
-    link: 'https://google.com',
+      'Deliver intuitive and visually compelling digital experiences. Our UI/UX design services enhance visitor engagement, increase usability, and ensure your product stands out in a competitive market.',
+    link: '',
   },
   {
-    title: 'Meta',
+    title: 'Website Maintenance & Support',
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: 'https://meta.com',
+      'Keep your site secure, updated, and running smoothly with proactive maintenance and technical support. We handle updates, backups, and troubleshooting, so you can focus on your business.',
+    link: '',
   },
   {
-    title: 'Amazon',
+    title: 'SEO Optimization',
     description:
-      'A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.',
-    link: 'https://amazon.com',
+      'Boost your visibility and drive targeted traffic with expert SEO services. We implement best practices, optimize on-page elements, and create content that improves your search engine rankings.',
+    link: '',
   },
   {
-    title: 'Microsoft',
+    title: 'Web Application Development',
     description:
-      'A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.',
-    link: 'https://microsoft.com',
+      'Transform your ideas into scalable web applications built for performance and security. We leverage modern frameworks and robust architecture to deliver solutions that help your business thrive online.',
+    link: '',
   },
 ]
