@@ -5,8 +5,8 @@ import ServicesItems from './ServicesItems'
 
 const ProfessionalExperties = () => {
   return (
-    <div id="services" className="px-4 py-16">
-      <div className="py-10 px-4 md:px-10 relative max-w-screen-lg mx-auto">
+    <div id="services" className="px-4 py-16 relative">
+      <div className="py-10 px-4 md:px-10 max-w-screen-lg mx-auto">
         <div className="space-y-10">
           {/* Heading */}
           <div className="">
@@ -26,7 +26,7 @@ const ProfessionalExperties = () => {
           </div>
         </div>
       </div>
-      {/* <BackgroundBeams /> */}
+      <BackgroundBeams />
     </div>
   )
 }
