@@ -1,11 +1,9 @@
 import { TextHoverEffectDemo } from '../Animation/TextHover/TextHover'
-import { BackgroundBeams } from '../ui/background-beams'
 import { HoverEffect } from '../ui/card-hover-effect'
-import ServicesItems from './ServicesItems'
 
 const ProfessionalExperties = () => {
   return (
-    <div id="services" className="px-4 py-16 relative">
+    <div id="services" className="px-4 py-16">
       <div className="py-10 px-4 md:px-10 max-w-screen-lg mx-auto">
         <div className="space-y-10">
           {/* Heading */}
@@ -26,7 +24,6 @@ const ProfessionalExperties = () => {
           </div>
         </div>
       </div>
-      <BackgroundBeams />
     </div>
   )
 }

@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { CustomButton } from '../MaterialComponents/CustomButton/CustomButton'
-import Form from '../ContactUs/Form/Form'
 import { TextHoverEffectDemo } from '../Animation/TextHover/TextHover'
 import FormModal from '../FormModal/FormModal'
-import { BackgroundBeams } from '../ui/background-beams'
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -26,7 +24,7 @@ const About = () => {
   }, [isOpen])
 
   return (
-    <div id="about" className="relative px-4 py-16">
+    <div id="about" className="px-4 py-16">
       <div className="max-w-screen-lg mx-auto">
         <TextHoverEffectDemo text="ABOUT US" />
         <h2 className="text-white font-extrabold text-2xl md:text-3xl text-center">
@@ -86,7 +84,6 @@ const About = () => {
         {/* CONTACT FORM MODAL */}
         {isOpen && <FormModal handleContactForm={handleContactForm} />}
       </div>
-      <BackgroundBeams />
     </div>
   )
 }
