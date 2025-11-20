@@ -1,4 +1,4 @@
-import { TextHoverEffectDemo } from '../Animation/TextHover/TextHover'
+import SectionHeading from '../SectionHeading/SectionHeading'
 import { HoverEffect } from '../ui/card-hover-effect'
 
 const ProfessionalExperties = () => {
@@ -6,19 +6,12 @@ const ProfessionalExperties = () => {
     <div id="services" className="px-4 py-16">
       <div className="py-10 px-4 md:px-10 max-w-screen-lg mx-auto">
         <div className="space-y-10">
-          {/* Heading */}
-          <div className="">
-            {/* <h2 className="text-secondary-text text-5xl md:text-7xl font-extrabold">
-            Services
-          </h2> */}
-            <TextHoverEffectDemo text="SERVICES" />
-            <h3 className="text-white font-extrabold text-2xl md:text-3xl text-center">
-              Professional <span className="text-primary-text">Expertise</span>
-            </h3>
-          </div>
-
-          {/* Services Grid */}
-          {/* <ServicesItems /> */}
+          <SectionHeading
+            t1="SERV"
+            t2="ICES"
+            st1="Professional"
+            st2="Expertise"
+          />
           <div>
             <HoverEffect items={projects} />
           </div>

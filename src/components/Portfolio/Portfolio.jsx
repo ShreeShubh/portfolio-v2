@@ -1,53 +1,17 @@
-import React, { useState } from 'react'
-import { projects } from '../../utils/data'
-import PortfolioTabs from './PortfolioTabs'
-import Projects from './Projects'
+import React from 'react'
 import { HeroParallax } from '../ui/hero-parallax'
-import { TextHoverEffectDemo } from '../Animation/TextHover/TextHover'
+import SectionHeading from '../SectionHeading/SectionHeading'
 
 const Portfolio = () => {
-  const [activeTab, setActiveTab] = useState('All')
-
-  const handleActiveTab = (id) => {
-    setActiveTab(id)
-  }
-
-  const getFilteredProject = () => {
-    if (activeTab !== 'All') {
-      const filteredProject = projects.filter((item) => item.id === activeTab)
-      return filteredProject
-    } else return projects
-  }
-
   return (
     <>
-      {/* <div className="min-h-screen px-4 md:px-10 max-w-screen-lg">
-        <div className="flex flex-col gap-7 items-center py-7">
-          
-          <div className="text-center">
-            <h2 className="text-secondary-text text-5xl md:text-7xl font-extrabold">
-              Portfolio
-            </h2>
-            <h3 className="text-white font-extrabold text-2xl md:text-3xl">
-              Some of my <span className="text-primary-text">Recent Work</span>
-            </h3>
-          </div>
-
-          
-          <PortfolioTabs
-            activeTab={activeTab}
-            handleActiveTab={handleActiveTab}
-          />
-
-          
-          <Projects getFilteredProject={getFilteredProject} />
-        </div>
-      </div> */}
       <div id="portfolio" className="bg-neutral-950 min-h-screen pt-16 pb-14">
-        <TextHoverEffectDemo text="PORTFOLIO" />
-        <h3 className="text-white font-extrabold text-2xl md:text-3xl text-center">
-          Projects We <span className="text-primary-text">Delivered</span>
-        </h3>
+        <SectionHeading
+          t1="PORT"
+          t2="FOLIO"
+          st1="Projects We"
+          st2="Delivered"
+        />
         <HeroParallax products={products} />
       </div>
     </>
@@ -151,3 +115,28 @@ export const products = [
       'https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png',
   },
 ]
+
+{
+  /* <div className="min-h-screen px-4 md:px-10 max-w-screen-lg">
+        <div className="flex flex-col gap-7 items-center py-7">
+          
+          <div className="text-center">
+            <h2 className="text-secondary-text text-5xl md:text-7xl font-extrabold">
+              Portfolio
+            </h2>
+            <h3 className="text-white font-extrabold text-2xl md:text-3xl">
+              Some of my <span className="text-primary-text">Recent Work</span>
+            </h3>
+          </div>
+
+          
+          <PortfolioTabs
+            activeTab={activeTab}
+            handleActiveTab={handleActiveTab}
+          />
+
+          
+          <Projects getFilteredProject={getFilteredProject} />
+        </div>
+      </div> */
+}

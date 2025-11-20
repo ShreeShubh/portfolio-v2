@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { CustomButton } from '../MaterialComponents/CustomButton/CustomButton'
-import { TextHoverEffectDemo } from '../Animation/TextHover/TextHover'
 import FormModal from '../FormModal/FormModal'
+import SectionHeading from '../SectionHeading/SectionHeading'
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -26,11 +26,12 @@ const About = () => {
   return (
     <div id="about" className="px-4 py-16">
       <div className="max-w-screen-lg mx-auto">
-        <TextHoverEffectDemo text="ABOUT US" />
-        <h2 className="text-white font-extrabold text-2xl md:text-3xl text-center">
-          Passionate Web Developer &{' '}
-          <span className="text-primary-text">Digital Creator</span>
-        </h2>
+        <SectionHeading
+          t1="ABOUT "
+          t2="US"
+          st1="Passionate Web Developer"
+          st2="& Digital Creator"
+        />
 
         {/* MAIN SECTION */}
         <div className="flex flex-col items-center gap-10 lg:gap-20 mt-10">
