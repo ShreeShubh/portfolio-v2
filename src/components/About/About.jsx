@@ -24,7 +24,7 @@ const About = () => {
   }, [isOpen])
 
   return (
-    <div id="about" className="px-4 py-16">
+    <div id="about" className="px-4 pt-24 pb-16">
       <div className="max-w-screen-lg mx-auto">
         <SectionHeading
           t1="ABOUT "

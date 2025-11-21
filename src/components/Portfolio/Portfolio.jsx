@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { HeroParallax } from '../ui/hero-parallax'
 import SectionHeading from '../SectionHeading/SectionHeading'
 
 const Portfolio = () => {
   return (
     <>
-      <div id="portfolio" className="bg-neutral-950 min-h-screen pt-16 pb-14">
+      <div id="portfolio" className="bg-neutral-950 min-h-screen pt-24 pb-16">
         <SectionHeading
           t1="PORT"
           t2="FOLIO"

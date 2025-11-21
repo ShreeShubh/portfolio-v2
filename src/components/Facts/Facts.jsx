@@ -4,7 +4,7 @@ import SectionHeading from '../SectionHeading/SectionHeading'
 
 const Facts = () => {
   return (
-    <div id="journey" className="px-4 md:px-10 py-16 mt-7">
+    <div id="journey" className="px-4 md:px-10 pt-24 pb-16">
       <div className="max-w-screen-lg mx-auto">
         <SectionHeading t1="FAC" t2="TS" st1="About" st2="Journey" />
 

@@ -3,7 +3,7 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react'
 
 const Introduction = () => {
   return (
-    <div className="px-4 pt-24 md:pt-0 min-h-screen flex justify-center items-center">
+    <div className="px-4 pt-24 md:pt-0 h-screen flex justify-center items-center">
       <div className="flex flex-col lg:flex-row items-center max-w-screen-lg mx-auto overflow-hidden">
         {/* main heading */}
         <div>
