@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <Navbar
       fluid
-      className="fixed top-0 w-full z-50 bg-neutral-950/70 backdrop-blur-lg border-b border-gray-600"
+      className="fixed top-0 w-full z-50 bg-neutral-950/70 backdrop-blur-lg border-b border-slate-700 [background-image:radial-gradient(rgba(255,255,255,0.1)_1px,transparent_1px)] [background-size:20px_20px]"
       data-aos="fade-down"
     >
       <div className="max-w-screen-lg mx-auto flex flex-wrap items-center justify-between w-full">

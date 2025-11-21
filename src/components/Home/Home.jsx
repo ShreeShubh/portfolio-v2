@@ -32,7 +32,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="relative min-h-screen bg-neutral-950 overflow-x-hidden">
+      <div className="relative min-h-screen background overflow-x-hidden">
         <Header />
         <Introduction />
         <Services />

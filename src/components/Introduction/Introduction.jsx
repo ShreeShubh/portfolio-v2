@@ -3,16 +3,16 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react'
 
 const Introduction = () => {
   return (
-    <div className="px-4 pt-24 md:pt-0 h-screen flex justify-center items-center">
+    <div className="px-4 pt-24 sm:pt-24 md:pt-0 h-screen flex justify-center items-center">
       <div className="flex flex-col lg:flex-row items-center max-w-screen-lg mx-auto overflow-hidden">
         {/* main heading */}
         <div>
           <div>
-            <h1 className="text-primary-text text-6xl md:text-7xl font-extrabold leading-none ">
+            <h1 className="text-primary-text text-5xl md:text-7xl font-extrabold leading-none ">
               WEB
             </h1>
 
-            <h1 className="font-orbitron text-4xl md:text-6xl text-white ps-9 lg:ps-24 lg:pb-3 flex space-x-1">
+            <h1 className="font-orbitron text-3xl md:text-6xl text-white ps-9 lg:ps-24 lg:pb-3 flex space-x-1">
               {Array.from('Development').map((letter, index) => (
                 <span
                   key={index}
@@ -24,7 +24,7 @@ const Introduction = () => {
               ))}
             </h1>
 
-            <h1 className="text-primary-text text-6xl md:text-7xl font-extrabold leading-none ">
+            <h1 className="text-primary-text text-5xl md:text-7xl font-extrabold leading-none ">
               SERVICES
             </h1>
           </div>
