@@ -15,17 +15,17 @@ const Timeline = () => {
             <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
           </svg>
         </span>
-        <h3 className="flex items-center mb-1 text-lg font-semibold text-primary-text">
+        <h3 className="flex items-center mb-1 text-sm md:text-lg font-semibold text-primary-text">
           Bvalue Services Pvt Ltd, Bengaluru — Assistant Manager, Frontend
           Developer{' '}
-          <span className="bg-primary-text text-primary-bg text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-3">
+          <span className="bg-primary-text text-primary-bg text-sm font-medium me-2 px-1.5 md:px-2.5 py-0.5 rounded ms-3">
             Latest
           </span>
         </h3>
         <time className="block mb-2 text-sm font-normal leading-none text-white">
           August 2025 – Present
         </time>
-        <p className="mb-4 text-base font-normal text-secondary-text">
+        <p className="mb-4 text-xs md:text-base font-normal text-secondary-text">
           Leading the development and maintenance of scalable, high-performance
           web applications using React.js and Next.js. Integrate RESTful APIs to
           optimize frontend–backend data flow and ensure seamless user
@@ -47,7 +47,7 @@ const Timeline = () => {
             <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
           </svg>
         </span>
-        <h3 className="flex items-center mb-1 text-lg font-semibold text-primary-text">
+        <h3 className="flex items-center mb-1 text-sm md:text-lg font-semibold text-primary-text">
           iVistaz Ecom Services Pvt Ltd, Bengaluru — Web Developer{' '}
           {/* <span className="bg-primary-text text-primary-bg text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-3">
             Latest
@@ -56,7 +56,7 @@ const Timeline = () => {
         <time className="block mb-2 text-sm font-normal leading-none text-white">
           March 2024 – July 2025
         </time>
-        <p className="mb-4 text-base font-normal text-secondary-text">
+        <p className="mb-4 text-xs md:text-base font-normal text-secondary-text">
           Develop and maintain highly responsive UI for{' '}
           <strong>web applications</strong> and {''}
           <strong>websites</strong> using <strong>MERN</strong> technology.
@@ -95,14 +95,14 @@ const Timeline = () => {
             <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
           </svg>
         </span>
-        <h3 className="mb-1 text-lg font-semibold text-primary-text">
+        <h3 className="mb-1 text-sm md:text-lg font-semibold text-primary-text">
           Nxtwave Disruptive Technologies, Hyderabad — MERN Stack Development
           (Training)
         </h3>
         <time className="block mb-2 text-sm font-normal leading-none text-white">
           MAY 2022 - FEB 2024
         </time>
-        <p className="text-base font-normal text-secondary-text">
+        <p className="text-xs md:text-base font-normal text-secondary-text">
           Built strong expertise in HTML, CSS, JavaScript, Python, React.js,
           Node.js, and SQLite through an intensive web development training
           program. Completed full-stack development projects, built robust
